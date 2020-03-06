@@ -7,7 +7,7 @@ rm depot_tools.zip
 export PATH=$PATH:$PWD/depot_tools
 git clone https://webrtc.googlesource.com/src src
 cd src
-choco uninstall -y python
+PATH=$(echo "$PATH" | sed -e 's/:\/c\/ProgramData\/chocolatey\/bin$//')
 which python
 export DEPOT_TOOLS_WIN_TOOLCHAIN=0
 gclient sync
