@@ -9,7 +9,7 @@ export PATH=$(which bash | sed s/bash//):$(which powershell | sed s/powershell//
 git clone https://webrtc.googlesource.com/src src
 cd src
 export DEPOT_TOOLS_WIN_TOOLCHAIN=0
-export vs2017_install=:C:\Program Files (x86)\Microsoft Visual Studio 14.0"
+export vs2017_install="C:\Program Files (x86)\Microsoft Visual Studio 14.0"
 gclient sync
 gn gen out/x64/Debug --args="is_clang=false is_debug=true rtc_include_tests=false target_cpu=\"x64\""
 cd out/x64/Debug
