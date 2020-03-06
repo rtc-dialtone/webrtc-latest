@@ -1,5 +1,6 @@
 #!/bin/bash
 set -ev
+ls -alR "C:\Program Files (x86)"
 uname | grep 'MSYS'
 curl -o depot_tools.zip https://storage.googleapis.com/chrome-infra/depot_tools.zip
 unzip depot_tools.zip -d depot_tools
