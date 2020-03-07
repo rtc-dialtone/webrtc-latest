@@ -2,7 +2,7 @@
 set -ev
 uname | grep 'MSYS'
 curl -L -o vs_buildtools.exe https://aka.ms/vs/15/release/vs_buildtools.exe
-./vs_builtools.exe --quiet --norestart --add Microsoft.VisualStudio.Workload.NativeDesktop --add Microsoft.VisualStudio.Component.VC.ATLMFC --includeRecommended
+./vs_buildtools.exe --quiet --norestart --add Microsoft.VisualStudio.Workload.NativeDesktop --add Microsoft.VisualStudio.Component.VC.ATLMFC --includeRecommended
 curl -o depot_tools.zip https://storage.googleapis.com/chrome-infra/depot_tools.zip
 unzip depot_tools.zip -d depot_tools
 rm depot_tools.zip
